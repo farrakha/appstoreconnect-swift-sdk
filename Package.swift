@@ -12,7 +12,6 @@ let package = Package(
     targets: [
         .target(
             name: "AppStoreConnect-Swift-SDK",
-            dependencies: [],
             path: "Sources"),
         .testTarget(
             name: "AppStoreConnect-Swift-SDKTests",

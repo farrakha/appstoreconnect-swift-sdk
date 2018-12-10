@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Alamofire
+
 
 /// An Authenticator for URL Requests which makes use of the RequestAdapter from Alamofire.
 final class JWTRequestsAuthenticator {
@@ -34,7 +34,7 @@ final class JWTRequestsAuthenticator {
     }
 }
 
-extension JWTRequestsAuthenticator: RequestAdapter {
+extension JWTRequestsAuthenticator {
     func adapt(_ urlRequest: URLRequest) throws -> URLRequest {
         let token = try createToken()
         var urlRequest = urlRequest

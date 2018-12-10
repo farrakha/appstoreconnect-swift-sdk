@@ -5,7 +5,7 @@
 //  Created by Pascal Edmond on 30/11/2018.
 //
     
-import Alamofire
+
 
 extension APIEndpoint where T == BetaAppLocalizationsResponse {
 

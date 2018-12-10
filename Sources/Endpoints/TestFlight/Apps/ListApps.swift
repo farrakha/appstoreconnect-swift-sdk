@@ -5,7 +5,7 @@
 //  Created by Pascal Edmond on 16/11/2018.
 //
 
-import Alamofire
+
 
 extension APIEndpoint where T == AppsResponse {
     

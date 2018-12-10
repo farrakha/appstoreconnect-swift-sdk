@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Alamofire
+
 
 // Represents a query parameter.
 // AppStoreConnect API accepts parameters like `limit` and "nested" ones
