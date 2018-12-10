@@ -9,9 +9,13 @@ let package = Package(
             name: "AppStoreConnect-Swift-SDK",
             targets: ["AppStoreConnect-Swift-SDK"])
     ],
+    dependencies: [
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("0.9.0"))
+    ],
     targets: [
         .target(
             name: "AppStoreConnect-Swift-SDK",
+            dependencies: ["CryptoSwift"],
             path: "Sources"),
         .testTarget(
             name: "AppStoreConnect-Swift-SDKTests",
